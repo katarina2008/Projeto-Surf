@@ -166,7 +166,7 @@ body{
 
 /* CARD */
 
-.card-box{
+.blocohome{
   position: relative;
   text-align: center;
 
@@ -411,7 +411,7 @@ body{
 
 /* CARD */
 
-.equip-card{
+.corhome{
   background-color: #e6e8a9;
 
   border-radius: 20px;
@@ -421,15 +421,17 @@ body{
   text-align: center;
 
   transition: 0.3s;
+  max-width: 220px;
+  margin: 0 auto;
 }
 
-.equip-card:hover{
+.corhome:hover{
   transform: translateY(-10px);
 }
 
 /* IMAGEM */
 
-.equip-card img{
+.corhome img{
   width: 100%;
   height: 230px;
 
@@ -441,55 +443,45 @@ body{
 }
 
 /* TÍTULO */
-
-.equip-card h3{
+.corhome h3{
   font-family: 'Pacifico', cursive;
   color: #083b7a;
-
-  font-size: 2rem;
-
+  font-size: 1.2rem;
   margin-bottom: 5px;
+  line-height: 1.3;
 }
 
 /* PREÇO */
 
-.equip-card span{
+.corhome span{
   display: block;
-
-  font-family: 'Pacifico', cursive;
-
+  font-family: 'Poppins', sans-serif;
   color: #00a3ad;
-
-  font-size: 2rem;
-
-  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 /* BOTÃO */
 
-.equip-card button{
+.corhome button{
   background-color: #00a89d;
-
   border: none;
-
-  color: #083b7a;
-
-  font-family: 'Pacifico', cursive;
-
-  font-size: 2rem;
-
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
   width: 100%;
-
-  border-radius: 30px;
-
+  border-radius: 25px;
   padding: 10px;
-
   transition: 0.3s;
 }
-
-.equip-card button:hover{
+.corhome{
+  max-width: 220px;
+  margin: 0 auto;
+}
+.corhome button:hover{
   background-color: #008d84;
-  color: white;
 }
 
 /* RESPONSIVO */
@@ -535,3 +527,456 @@ body{
 }
 
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+/* Cabeçalho */
+header{
+  background: #008c9e;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  font-size: 24px;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff8b0;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Conteúdo */
+main{
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+h1{
+  text-align: center;
+  color: #0a4175;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+/* Galeria */
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.galeria img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Rodapé */
+footer{
+  background: #003d69;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.logo-footer{
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+footer p{
+  font-size: 14px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+/* MENU */
+header{
+  background: #008c9e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.logo{
+  font-size: 24px;
+}
+
+nav ul{
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+nav a{
+  text-decoration: none;
+  color: #fff5a3;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* CONTEÚDO */
+main{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+h1{
+  text-align: center;
+  color: #0b4677;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.subtitulo{
+  text-align: center;
+  color: #008c9e;
+  font-size: 14px;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* CARDS */
+.equipamentos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  justify-items: center;
+}
+
+.card{
+  background: #dfe5b5;
+  width: 180px;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.card img{
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card h3{
+  margin-top: 10px;
+  color: #003d69;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.card p{
+  margin: 8px 0;
+  color: #008c9e;
+  font-weight: bold;
+}
+
+.card button{
+  background: #00a6a6;
+  color: white;
+  border: none;
+  padding: 8px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.card button:hover{
+  background: #008b8b;
+}
+
+/* RODAPÉ */
+footer{
+  background: #003d69;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.logo-footer{
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Patrick Hand', cursive;
+}
+
+body{
+    background:#f5f5f5;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+/* HEADER */
+
+header{
+    background:#008b9a;
+    height:70px;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.logo{
+    width:45px;
+    height:45px;
+    border:2px solid #004f5a;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#004f5a;
+    font-size:20px;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+/* CONTEÚDO */
+
+.contato{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.contato h1{
+    color:#0f4c81;
+    font-size:3rem;
+}
+
+.contato > p{
+    color:#008b9a;
+    margin-bottom:30px;
+}
+
+.infocontato{
+    max-width:900px;
+    margin:auto;
+    background:#dfe6a9;
+    border-radius:80px;
+    padding:50px;
+}
+
+.info{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    text-align:left;
+    color:#008b9a;
+}
+
+.info h3{
+    margin-bottom:8px;
+    color:#008b9a;
+}
+
+.botoes{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:40px;
+}
+
+.btn{
+    text-decoration:none;
+    color:white;
+    padding:12px 25px;
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+.whatsapp{
+    background:#52b96c;
+}
+
+.instagram{
+    background:#536b7d;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top:auto;
+    background:#003f67;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+footer i{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    nav{
+        gap:15px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .info{
+        grid-template-columns:1fr;
+    }
+
+    .botoes{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .card{
+        border-radius:40px;
+        padding:30px;
+    }
+}
+
+.secao-aulas{
+  padding:50px 20px;
+  text-align:center;
+}
+
+.titulo-aulas{
+  font-size:42px;
+  color:#0b4173;
+  margin-bottom:10px;
+}
+
+.descricao-aulas{
+  color:#0d6880;
+  margin-bottom:40px;
+}
+
+.container-planos{
+  display:flex;
+  justify-content:center;
+  gap:40px;
+  flex-wrap:wrap;
+}
+
+.cartao-aula{
+  width:280px;
+  background:#dde0a7;
+  border-radius:20px;
+  padding:25px;
+}
+
+.icone-aula{
+  width:90px;
+  display:block;
+  margin:0 auto 20px;
+}
+
+.texto-cartao{
+  color:#0d6880;
+  margin-bottom:20px;
+}
+
+.lista-beneficios{
+  list-style:none;
+  text-align:left;
+}
+
+.lista-beneficios li{
+  margin-bottom:15px;
+  color:#0b4173;
+}
+
+.secao-agendamento{
+  background:#0a8797;
+  padding:50px 20px;
+  text-align:center;
+}
+
+.titulo-agendamento{
+  color:#0b4173;
+  font-size:40px;
+  margin-bottom:35px;
+}
+
+.formulario-surf{
+  max-width:700px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:20px;
+}
+
+.campo-surf{
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background:#dde0a7;
+}
+
+.botao-agendar{
+  grid-column:1 / 4;
+  width:180px;
+  margin:auto;
+  padding:14px;
+  border:none;
+  border-radius:8px;
+  background:#0b4173;
+  color:white;
+  cursor:pointer;
+}

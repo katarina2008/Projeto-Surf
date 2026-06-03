@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">🌊</div>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="#">aulas</a></li>
+                <li><a href="equipamentos.html">equipamentos</a></li>
+                <li><a href="galeria.html">galeria</a></li>
+                <li><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<section class="secao-aulas">
+    <h1 class="titulo-aulas">Aulas de surf</h1>
+
+    <p class="descricao-aulas">
+        Nossas aulas são para todos os níveis.<br>
+        Venha viver essa experiência!
+    </p>
+
+    <div class="container-planos">
+
+        <div class="cartao-aula">
+            <img src="onda.jpeg" alt="Iniciante" class="icone-aula">
+
+            <p class="texto-cartao">
+                Ideal para quem está começando.
+            </p>
+
+            <ul class="lista-beneficios">
+                <li>Duração: 2h</li>
+                <li>Nível: Iniciante</li>
+                <li>Turmas: Até 4 alunos</li>
+            </ul>
+        </div>
+
+        <div class="cartao-aula">
+            <img src="onda.jpeg" alt="Avançado" class="icone-aula">
+
+            <p class="texto-cartao">
+                Para quem já tem experiência.
+            </p>
+
+            <ul class="lista-beneficios">
+                <li>Duração: 2h</li>
+                <li>Nível: Intermediário</li>
+                <li>Turmas: Até 3 alunos</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="secao-agendamento">
+    <h2 class="titulo-agendamento">
+        Agende sua aula
+    </h2>
+
+    <form class="formulario-surf">
+        <input type="text" class="campo-surf" placeholder="Nome completo">
+
+        <input type="tel" class="campo-surf" placeholder="XX-XXXXX-XXXX">
+
+        <input type="date" class="campo-surf">
+
+        <input type="text" class="campo-surf" placeholder="Nível">
+
+        <select class="campo-surf">
+            <option>Iniciante</option>
+            <option>Intermediário</option>
+            <option>Avançado</option>
+        </select>
+
+        <button class="botao-agendar">
+            Agendar
+        </button>
+    </form>
+</section>
